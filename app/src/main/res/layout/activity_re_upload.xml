@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context="com.nitap.attende.ReUploadActivity">
 
+
   <ImageView
       android:id="@+id/display_image"
       android:layout_width="200dp"
