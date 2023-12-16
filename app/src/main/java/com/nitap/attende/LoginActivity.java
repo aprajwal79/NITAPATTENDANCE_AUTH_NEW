@@ -19,6 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.collection.ArraySet;
 import androidx.core.content.ContextCompat;
+import androidx.core.splashscreen.SplashScreen;
 import androidx.credentials.Credential;
 import androidx.credentials.CredentialManager;
 import androidx.credentials.CredentialManagerCallback;
@@ -61,9 +62,7 @@ import com.nitap.attende.models.Student;
 import com.nitap.attende.models.Class;
 import com.nitap.attende.models.Teacher;
 import com.nitap.attende.pages.HomeActivity;
-import com.ttv.face.FaceFeatureInfo;
-import com.ttv.facerecog.DBHelper;
-import com.ttv.facerecog.R;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -93,9 +92,9 @@ public class LoginActivity extends AppCompatActivity {
     static Section section;
     static Class class1;
     static Teacher teacher;
-    static FaceFeatureInfo faceFeatureInfo;
+    //static FaceFeatureInfo faceFeatureInfo;
     Button btnRegister,submitButton;
-    private DBHelper mydb ;
+    //private DBHelper mydb ;
     public static ArrayList userLists;
     public static String facetagForFaceInfo ;
     public static int searchIdForFaceInfo ;
@@ -108,7 +107,9 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_login);
+       // SplashScreen.installSplashScreen(this);
         hasLeft = false;
         MyUtils.removeConfigurationBuilder(this);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -677,7 +678,9 @@ display("2");
                     myConfiguration.student.courses = class1.courses;
                     MyUtils.saveConfigurationBuilder(getApplicationContext(),myConfiguration);
 
-                    downloadPhoto();
+                display("TODO: Load FaceFeatureInfoString into model");
+                //TODO: Load FaceFeatureInfoString into model
+                   // downloadPhoto();
 
                 courseRef.removeEventListener(this);
             }
@@ -710,8 +713,10 @@ display("2");
                 display("Please ReUpload the same image "+rollno+".jpg to continue");
 
                 hasLeft=true;
-                startActivity(new Intent(getApplicationContext(),ReUploadActivity.class));
-                finish();
+                display("TODO: Load FaceFeatureInfoString into model");
+                //TODO: Load FaceFeatureInfoString into model
+               // startActivity(new Intent(getApplicationContext(),ReUploadActivity.class));
+               // finish();
             }
         }
     };

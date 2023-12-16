@@ -20,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ttv.facerecog.R;
+
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;

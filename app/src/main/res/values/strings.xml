@@ -5,6 +5,7 @@
     <string name="duplicated_name">Duplicated name!</string>
 
     <string name="web_client_id">305352247527-llm2m9p0smvunhmj4aeushknk7uq1o0i.apps.googleusercontent.com</string>
+    <string name="skip">SKIP</string>
 
 
     <string-array name="degrees">
@@ -54,6 +55,23 @@
         <item>A</item>
         <item>B</item>
     </string-array>
+
+    <string name="title_onboarding_1">Welcome to Onboarding App !</string>
+    <string name="description_onboarding_1">Here is an open-source project which shows sweet &amp; original onboarding ViewPagers that follows Material Design Guidelines</string>
+
+    <string name="title_onboarding_2">Try AirBnB Lottie</string>
+    <string name="description_onboarding_2">We use Lottie Animations on our Intro to make it interactive &amp; pleasant. Did you already tried it ? If no, let\'s start now. It\'s just awesome</string>
+
+    <string name="title_onboarding_3">Code beautiful apps</string>
+    <string name="description_onboarding_3">Our mission is to make useful &amp; subtle apps. We love help people to save time with open-source stuffs, but we also make life easier by creating new things. Good Coding!</string>
+
+    <string name="start_text_advice">By continuing on this application you agree to our Terms of Use and Privacy Policy</string>
+
+    <string name="start">start</string>
+
+    <string name="finish">finish</string>
+    <string name="next">next</string>
+    <string name="back">back</string>
 
 
 </resources>

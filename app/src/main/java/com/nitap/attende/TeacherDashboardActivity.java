@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.nitap.attende.models.MyConfiguration;
 
 import com.nitap.attende.pages.TakeAttendance;
-import com.ttv.facerecog.R;
+
 
 import java.util.ArrayList;
 

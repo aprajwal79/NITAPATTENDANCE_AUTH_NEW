@@ -25,7 +25,7 @@ import com.nitap.attende.models.Attendance;
 import com.nitap.attende.models.SectionInfo;
 import com.nitap.attende.models.Teacher;
 import com.opencsv.CSVWriter;
-import com.ttv.facerecog.R;
+
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;

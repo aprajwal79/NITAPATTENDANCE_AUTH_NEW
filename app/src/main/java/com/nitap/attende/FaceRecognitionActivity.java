@@ -1,6 +1,6 @@
 package com.nitap.attende;
 
-import static com.ttv.facerecog.R.*;
+
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,14 +33,7 @@ import com.google.firebase.storage.UploadTask;
 import com.nitap.attende.models.MyConfiguration;
 import com.nitap.attende.models.MyStudent;
 import com.nitap.attende.pages.HomeActivity;
-import com.ttv.face.FaceFeatureInfo;
-import com.ttv.face.FaceResult;
-import com.ttv.facerecog.DBHelper;
-import com.ttv.facerecog.FaceEntity;
-import com.ttv.facerecog.ImageRotator;
-//import com.ttv.facerecog.R;
-import com.ttv.facerecog.R;
-import com.ttv.facerecog.Utils;
+
 
 import org.jetbrains.annotations.Nullable;
 
@@ -55,7 +48,7 @@ import kotlin.jvm.internal.Intrinsics;
 
 public class FaceRecognitionActivity extends AppCompatActivity {
 
-    private DBHelper mydb ;
+   // private DBHelper mydb ;
     public static ArrayList userLists;
     Button btnRegister, submitButton ;
 
@@ -65,17 +58,18 @@ public class FaceRecognitionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_face_recognition);
         Toast.makeText(getApplicationContext(), "FACE RECOGNITION ACTIVITY", Toast.LENGTH_SHORT).show();
-        this.mydb = new DBHelper(this);
-        this.mydb = new DBHelper((Context)this);
+
+       /* this.mydb = new DBHelper(this);
+        this.mydb = new DBHelper((Context)this);*/
 
 
 //        btnVerify = findViewById(id.btnVerify);
 //        btnRegister = findViewById(id.btnRegister);
 //        btnVerify.setEnabled(true);
 
-        submitButton = findViewById(id.button_next);
+        submitButton = findViewById(R.id.button_next);
 
-        btnRegister = findViewById(id.upload_btn);
+        btnRegister = findViewById(R.id.upload_btn);
         submitButton.setEnabled(false);
         btnRegister.setEnabled(true);
 
@@ -106,7 +100,7 @@ public class FaceRecognitionActivity extends AppCompatActivity {
     }
 
 
-
+/*
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 
 
@@ -121,6 +115,7 @@ public class FaceRecognitionActivity extends AppCompatActivity {
                    // display(data.getData().toString());
                 }
                 Intrinsics.checkNotNull(var10001);
+
                 Bitmap var20 = ImageRotator.getCorrectlyOrientedImage(var10000, var10001);
                 if (var20 == null) {
                    // display("BITMAP NULL");
@@ -197,6 +192,8 @@ public class FaceRecognitionActivity extends AppCompatActivity {
             } catch (Exception var13) {
                 var13.printStackTrace();
             }
+
+
         }
 
 
@@ -207,6 +204,10 @@ public class FaceRecognitionActivity extends AppCompatActivity {
 
     }
 
+ */
+
+
+            /*
     private void uploadPhoto(Context applicationContext, Uri data, String rollno,FaceFeatureInfo faceFeatureInfo) {
 
         FirebaseStorage storage = FirebaseStorage.getInstance();
@@ -302,7 +303,7 @@ public class FaceRecognitionActivity extends AppCompatActivity {
         }
     }
 
-
+*/
 
     @Override
     protected void onResume() {

@@ -1,172 +1,167 @@
-<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-package="com.ttv.facerecog">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nitap.attende">
 
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission
-    android:name="android.permission.BLUETOOTH"
-    android:usesPermissionFlags="neverForLocation" />
-<uses-permission
-    android:name="android.permission.BLUETOOTH_ADMIN"
-    android:usesPermissionFlags="neverForLocation" />
-<uses-permission
-    android:name="android.permission.BLUETOOTH_ADVERTISE"
-    android:usesPermissionFlags="neverForLocation" />
-<uses-permission
-    android:name="android.permission.BLUETOOTH_CONNECT"
-    android:usesPermissionFlags="neverForLocation" />
-<!--
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADVERTISE"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT"
+        android:usesPermissionFlags="neverForLocation" />
+    <!--
 uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
     <uses-permission android:name="android.permission.BLUETOOTH_MAP" /
     -->
-<uses-permission
-    android:name="android.permission.BLUETOOTH_SCAN"
-    android:usesPermissionFlags="neverForLocation" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission
+        android:name="android.permission.NEARBY_WIFI_DEVICES"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
-<uses-permission
-    android:name="android.permission.NEARBY_WIFI_DEVICES"
-    android:usesPermissionFlags="neverForLocation" />
-<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-<uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission
-    android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
-    tools:ignore="ScopedStorage" />
-<uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
-<uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.bluetooth" />
+    <uses-feature android:name="android.hardware.bluetooth_admin" />
 
-<uses-feature android:name="android.hardware.camera" />
-<uses-feature android:name="android.hardware.bluetooth" />
-<uses-feature android:name="android.hardware.bluetooth_admin" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/nitap"
+        android:label="NIT AP ATTENDANCE"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/nitap"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TTVFaceRecog">
+        <activity
+            android:name=".UIDesignActivity"
+            android:exported="true">
 
-<application
-    android:allowBackup="true"
-    android:icon="@mipmap/nitap"
-    android:label="NIT AP ATTENDANCE"
-    android:requestLegacyExternalStorage="true"
-    android:roundIcon="@mipmap/nitap"
-    android:supportsRtl="true"
-    android:autoRevokePermissions="disallowed"
-    android:largeHeap="true"
-    android:theme="@style/Theme.TTVFaceRecog">
-    <activity
-        android:name="com.nitap.attende.AddTeacherActivity"
-        android:exported="false"
+        </activity>
+        <activity
+            android:name=".AddTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
 
-        />
-    <activity
-        android:name=".MainActivity"
-        android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <activity android:name=".GetStarted" android:exported="true" >
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-    <activity
-        android:name="com.nitap.attende.pages.ViewStudentProfileActivity"
-        android:exported="false" />
-    <activity
-        android:name="com.nitap.attende.AdminActivity"
-        android:exported="true" />
-    <activity
-        android:name="com.nitap.attende.FaceRecognitionActivity"
-        android:exported="true" />
-    <activity
-        android:name="com.nitap.attende.TestActivity"
-        android:exported="false" />
-    <activity
-        android:name=".CameraActivity"
-        android:exported="true" />
-    <activity
-        android:name=".UserActivity"
-        android:exported="true" />
-    <activity
-        android:name="com.nitap.attende.MainActivity"
-        android:exported="true">
+        </activity>
+        <activity android:name=".TermsAndConditions" android:exported="true"/>
 
-    </activity>
-    <activity
-        android:name="com.nitap.attende.BluetoothScannerActivity"
-        android:exported="true">
+        <activity
+            android:name=".pages.ViewStudentProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FaceRecognitionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BluetoothScannerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pages.TakeAttendance"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".OnboardingActivity" android:exported="true">
+           
+            
+        </activity>
+        <activity android:name=".activities.OnboardingExample1Activity" android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-    </activity>
-    <activity
-        android:name="com.nitap.attende.pages.TakeAttendance"
-        android:exported="true">
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
-    </activity>
-    <activity
-        android:name="com.nitap.attende.pages.AttendanceActivity"
-        android:exported="true">
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
-    </activity>
-
-    <activity
-        android:name="com.nitap.attende.pages.DisplayAttendance"
-        android:exported="true">
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
-    </activity>
-
-
-    <activity
-        android:name="com.nitap.attende.ReUploadActivity"
-        android:exported="false"
-
-        />
-    <activity
-        android:name="com.nitap.attende.pages.HomeActivity"
-        android:exported="true">
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
-    </activity>
-
-
-    <activity
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.OnboardingFinishActivity" android:exported="true"/>
+        <activity
+            android:name=".pages.AttendanceActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".pages.DisplayAttendance"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ReUploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.HomeActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <!--
+activity
         android:name="com.nitap.attende.LoginActivity"
         android:exported="true">
         <meta-data
             android:name="android.app.lib_name"
             android:value="" />
-    </activity>
-    <activity
-        android:name="com.nitap.attende.AddClassActivity"
-        android:exported="false" />
-    <activity
-        android:name="com.nitap.attende.AddSectionActivity"
-        android:exported="false" />
-    <activity
-        android:name="com.nitap.attende.TeacherDashboardActivity"
-        android:exported="false" />
-    <activity
-        android:name="com.nitap.attende.MainActivity2"
-        android:exported="true" />
-    <activity
-        android:name="com.nitap.attende.ViewTeacherProfileActivity"
-        android:exported="false"
-
-        />
-    <activity
-        android:name="com.nitap.attende.AddAdminActivity"
-        android:exported="false"
-
-        />
-</application>
+    </activity
+        -->
+        <activity
+            android:name=".AddClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddSectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".ViewTeacherProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddAdminActivity"
+            android:exported="false" />
+    </application>
 
 </manifest>

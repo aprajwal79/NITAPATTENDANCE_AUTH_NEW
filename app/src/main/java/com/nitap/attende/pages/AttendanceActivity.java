@@ -20,8 +20,8 @@ import androidx.core.content.ContextCompat;
 
 import com.nitap.attende.EncryptActivity;
 import com.nitap.attende.MyUtils;
+import com.nitap.attende.databinding.ActivityAttendanceBinding;
 import com.nitap.attende.models.MyConfiguration;
-import com.ttv.facerecog.databinding.ActivityAttendanceBinding;
 
 public class AttendanceActivity extends AppCompatActivity {
 

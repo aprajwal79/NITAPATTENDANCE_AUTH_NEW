@@ -24,10 +24,7 @@
             android:visibility="visible"
             tools:visibility="visible">
 
-            <com.ttv.facerecog.FaceRectView
-                android:id="@+id/rectanglesView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+
         </io.fotoapparat.view.CameraView>
     </FrameLayout>
 

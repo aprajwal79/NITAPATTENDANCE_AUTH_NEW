@@ -18,7 +18,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.nitap.attende.models.MyConfiguration;
 
-import com.ttv.face.FaceFeatureInfo;
+
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -88,7 +88,7 @@ public class MyUtils {
     public static void setSalt(Context context,String salt) {
         MyUtils.saveString(context,"SALT",salt);
     }
-
+/*
     public static FaceFeatureInfo getFaceFeatureInfo(Context applicationContext, String faceinfoString) {
         ObjectMapper mapper = new ObjectMapper();
         FaceFeatureInfo faceFeatureInfo = new FaceFeatureInfo();
@@ -100,7 +100,7 @@ public class MyUtils {
         if (faceFeatureInfo == null){ return null; }
         else  { return faceFeatureInfo; }
     }
-
+*/
     public static MyConfiguration getConfiguration(Context context) {
         ObjectMapper mapper = new ObjectMapper();
         MyConfiguration myConfiguration = new MyConfiguration();

@@ -12,19 +12,15 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.nitap.attende.MainActivity.mydb
+
 //import com.nitap.attende.MainActivity.context
-import com.ttv.face.FaceEngine
-import com.ttv.face.FaceFeatureInfo
-import com.ttv.face.FaceResult
-import com.ttv.facerecog.*
-import com.ttv.facerecog.MainActivity
+
 
  public class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
-        trainFace(LoginActivity.myUri,LoginActivity.myRollno);
+       // trainFace(LoginActivity.myUri,LoginActivity.myRollno);
 
 
 
@@ -36,7 +32,7 @@ fun display(msg:String) {
 }
 
 
-
+/*
      public fun trainFace(uri: Uri, rollno:String) {
          try {
              display(uri.toString())
@@ -115,7 +111,7 @@ fun display(msg:String) {
          Toast.makeText(this,"COMPLETED TRAINING",Toast.LENGTH_SHORT).show()
          finish()
      }
-
+*/
 
 
 

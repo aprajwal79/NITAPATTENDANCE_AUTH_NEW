@@ -13,7 +13,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.nitap.attende.models.Admin;
-import com.ttv.facerecog.R;
+
 
 public class AddAdminActivity extends AppCompatActivity {
 

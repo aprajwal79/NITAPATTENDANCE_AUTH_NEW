@@ -17,11 +17,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.nitap.attende.Adapters.RollListAdapter;
+import com.nitap.attende.adapters.RollListAdapter;
 import com.nitap.attende.ClickListener;
+import com.nitap.attende.R;
+import com.nitap.attende.databinding.ActivityDisplayAttendanceBinding;
 import com.nitap.attende.model.RollListModel;
-import com.ttv.facerecog.R;
-import com.ttv.facerecog.databinding.ActivityDisplayAttendanceBinding;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

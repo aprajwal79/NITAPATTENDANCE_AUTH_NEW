@@ -6,7 +6,6 @@ import android.util.Base64;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ttv.facerecog.R;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;

@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.nitap.attende.models.MyConfiguration;
 import com.nitap.attende.models.SectionInfo;
 import com.nitap.attende.models.Teacher;
-import com.ttv.facerecog.R;
+
 
 import java.util.ArrayList;
 

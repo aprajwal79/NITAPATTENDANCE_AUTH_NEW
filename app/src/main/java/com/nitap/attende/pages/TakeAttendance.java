@@ -33,9 +33,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.nitap.attende.EncryptActivity;
-import com.ttv.facerecog.R;
-import com.ttv.facerecog.databinding.ActivityAttendanceBinding;
-import com.ttv.facerecog.databinding.ActivityTakeAttendanceBinding;
+import com.nitap.attende.R;
+import com.nitap.attende.databinding.ActivityTakeAttendanceBinding;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;

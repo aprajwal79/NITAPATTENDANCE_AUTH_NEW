@@ -18,10 +18,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.nitap.attende.LoginActivity;
 import com.nitap.attende.MyUtils;
+import com.nitap.attende.R;
+import com.nitap.attende.databinding.ActivityHomeBinding;
 import com.nitap.attende.models.MyConfiguration;
-import com.ttv.facerecog.CameraActivity;
-import com.ttv.facerecog.R;
-import com.ttv.facerecog.databinding.ActivityHomeBinding;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -76,8 +75,9 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "VERIFY CLICKED", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), CameraActivity.class);
-                startActivityForResult(intent, 2);
+                Toast.makeText(HomeActivity.this, "CameraActivity.class not found", Toast.LENGTH_SHORT).show();
+                //Intent intent = new Intent(getApplicationContext(), CameraActivity.class);
+                //startActivityForResult(intent, 2);
 
 
             }
