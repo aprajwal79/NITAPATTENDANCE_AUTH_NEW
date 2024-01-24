@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -26,7 +27,7 @@
             android:layout_below="@id/image_onboarding"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:text="@string/title_onboarding_1"
+            android:text="string/title_onboarding_1"
             android:textSize="18sp"
             android:gravity="center"
             android:textStyle="bold"
@@ -38,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_onboarding_title"
-            android:text="@string/description_onboarding_1"
+            android:text="string/description_onboarding_1"
             android:textSize="15sp"
             android:gravity="center"
             android:textColor="@color/light_grey"
@@ -46,9 +47,23 @@
 
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/layout_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="getStartedClicked"
+        android:text="@string/get_started"
+        android:textSize="15sp"
+        android:textColor="@color/md_white_1000"
 
+        />
 
-    <LinearLayout
+    <!--LinearLayout
         android:id="@+id/layout_start"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -56,15 +71,20 @@
         android:layout_alignParentBottom="true"
         android:gravity="center"
         android:clickable="true"
-        android:focusable="true">
+        android:focusable="true"
+        android:onClick="getStartedClicked"
+        tools:ignore="UsingOnClickInXml">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GETTING STARTED"
-            android:textColor="@color/md_white_1000"/>
+            android:text="@string/get_started"
+            android:textSize="15sp"
+            android:textColor="@color/md_white_1000"
+
+            />
 
 
-    </LinearLayout>
+    </LinearLayout-->
 
 </RelativeLayout>

@@ -11,7 +11,7 @@
 
 <color name="colorPrimary">#6FB6F4</color>
 <color name="colorPrimaryDark">#3E97F0</color>
-<color name="colorAccent">#f0973e</color>
+<!--color name="colorAccent">#f0973e</color-->
 
 <color name="light_grey">#ABABAB</color>
 <color name="dark_grey">#333333</color>
@@ -313,5 +313,16 @@
 <color name="md_blue_grey_700">#455A64</color>
 <color name="md_blue_grey_800">#37474F</color>
 <color name="md_blue_grey_900">#263238</color>
+
+
+    <!--color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color-->
+    <color name="colorAccent">#4CAF50</color>
+    <color name="colorPurple">#6c63ff</color>
+    <color name="colorIndigo">#303F9F</color>
+    <color name="colorBlueMidnight">#003366</color>
+    <color name="colorGrey">#C9C9C9</color>
+    <color name="colorWhite">#FFFFFF</color>
+
 
 </resources>

@@ -17,6 +17,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.nitap.attende.LoginActivity;
+import com.nitap.attende.LoginUtils;
 import com.nitap.attende.MyUtils;
 import com.nitap.attende.R;
 import com.nitap.attende.databinding.ActivityHomeBinding;

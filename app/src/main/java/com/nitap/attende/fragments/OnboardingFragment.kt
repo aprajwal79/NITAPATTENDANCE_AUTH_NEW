@@ -1,12 +1,15 @@
 package com.nitap.attende.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.fragment.app.Fragment
 import com.airbnb.lottie.LottieAnimationView
+import com.nitap.attende.LoginActivity
 import com.nitap.attende.databinding.FragmentOnboarding1Binding
 
 class OnboardingFragment : Fragment() {
@@ -44,6 +47,8 @@ class OnboardingFragment : Fragment() {
         tvTitle.text = title
         tvDescription.text = description
         image.setAnimation(imageResource)
+
+
         return view
     }
 

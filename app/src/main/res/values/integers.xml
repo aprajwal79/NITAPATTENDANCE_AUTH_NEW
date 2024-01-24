@@ -1,4 +1,5 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <integer name="transition_page_duration">200</integer>
+    <integer name="animation_duration">350</integer>
 </resources>

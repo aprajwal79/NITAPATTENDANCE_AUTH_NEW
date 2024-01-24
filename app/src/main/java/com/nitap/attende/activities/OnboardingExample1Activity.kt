@@ -4,11 +4,14 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
+import com.nitap.attende.LoginActivity
 import com.nitap.attende.R
 import com.nitap.attende.adapters.OnboardingViewPagerAdapter
 import com.nitap.attende.databinding.ActivityOnboardingExample1Binding
@@ -22,9 +25,20 @@ class OnboardingExample1Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         binding = ActivityOnboardingExample1Binding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+       /*
+        val getStartedButton = findViewById<LinearLayout>(R.id.layout_start)
+        getStartedButton.setOnClickListener{
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+       */
 
         mViewPager = binding.viewPager
         mViewPager.adapter = OnboardingViewPagerAdapter(this, this)
@@ -64,5 +78,7 @@ class OnboardingExample1Activity : AppCompatActivity() {
             R.anim.animate_slide_left_exit
         )
     }
+
+
 
 }
