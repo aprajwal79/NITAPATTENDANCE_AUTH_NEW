@@ -329,7 +329,6 @@ public class TestActivity extends AppCompatActivity {
                          //
 
                         //handler.post(this);
-
                         // wait
                         sleep(1200);
                     }          // while block
